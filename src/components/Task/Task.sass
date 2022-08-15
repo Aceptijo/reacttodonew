@@ -1,0 +1,65 @@
+@import '../../variables'
+
+.App__task
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  width: 100%
+  padding: 6px 0px
+  border-radius: 5px
+  color: $darkColor
+  border: 1px solid $darkColor
+  background: $lightBgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.5s
+  &:hover
+    border: 1px solid $shadowColor
+    box-shadow: 0px 0px 20px 0px $shadowColor
+    background: $bgColor
+    color: $activeColor
+    transition: 0.5s
+
+
+
+.App__deleteButton
+  display: flex
+  background: transparent
+  border: none
+.App__deleteButton-svg
+  cursor: pointer
+  transition: .5s
+  &:hover
+    fill: $activeColor
+    transition: .5s
+
+
+
+.App__task-title
+  flex: 1
+
+
+
+.App__checkButton
+  display: flex
+  background: transparent
+  border: none
+.App__checkButton-svg
+  cursor: pointer
+  transition: .5s
+  &:hover
+    fill: $activeColor
+    transition: .5s
+
+
+.App__uncheckButton
+  display: flex
+  background: transparent
+  border: none
+.App__uncheckButton-svg
+  cursor: pointer
+  transition: .5s
+  &:hover
+    fill: $activeColor
+    transition: .5s

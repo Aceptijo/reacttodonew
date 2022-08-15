@@ -1,0 +1,27 @@
+@import '../../variables'
+
+.App__myButton
+  width: 15%
+  font-size: 14px
+  padding: 10px
+  border-radius: 5px
+  color: $darkColor
+  border: 1px solid $darkColor
+  background: $lightBgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.1s
+  cursor: pointer
+  &:active
+    border: 1px solid $shadowColor
+    box-shadow: 0px 0px 20px 0px $shadowColor
+    background: $bgColor
+    color: $activeColor
+  &:focus-visible
+    outline: none
+    border: 1px solid $shadowColor
+    box-shadow: 0px 0px 20px 0px $shadowColor
+    background: $bgColor
+    transition: 0.7s ease
+  &:hover
+    background: $bgColor
