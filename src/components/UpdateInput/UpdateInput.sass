@@ -1,0 +1,44 @@
+@import '../../variables'
+.App__update
+  display: flex
+  width: 100%
+
+
+.App__updateInput
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  width: 100%
+  border: none
+  padding: 10px
+  border-radius: 5px 0px 0px 5px
+  color: $fontColor
+  background: $bgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.4s ease
+  &:focus-visible
+    outline: none
+
+.App__updateButton
+  font-size: 14px
+  padding: 10px
+  border-radius: 0px 5px 5px 0px
+  color: $fontColor
+  border: none
+  background: $shadowColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.1s
+  cursor: pointer
+  &:active
+    outline: none
+    box-shadow: 0px 0px 20px 0px $shadowColor
+    background: $activeColor
+    color: $fontColor
+  &:focus-visible
+    outline: none
+    box-shadow: 0px 0px 20px 0px $shadowColor
+  &:hover
+    box-shadow: 0px 0px 20px 0px $shadowColor

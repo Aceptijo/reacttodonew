@@ -2,10 +2,17 @@ import "./App.sass";
 import { useState } from "react";
 import AddTask from "./components/AddTask/AddTask";
 import TasksList from "./components/TasksList/TasksList";
+import UpdateInput from "./components/UpdateInput/UpdateInput";
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [completedTasks, setCompletedTasks] = useState([]);
+  const [title, setTitle] = useState("");
+
+  const create = (newTask) => {
+    setTasks([...tasks, newTask]);
+    setTitle("");
+  };
 
   const remove = (task) => {
     setTasks(tasks.filter((createdTask) => createdTask.id !== task.id));
@@ -30,7 +37,14 @@ function App() {
   return (
     <div className="App">
       <span className="App__title"> NEW TODO</span>
-      <AddTask tasks={tasks} setTasks={setTasks} />
+
+      <AddTask
+        tasks={tasks}
+        setTasks={setTasks}
+        title={title}
+        setTitle={setTitle}
+        create={create}
+      />
       <TasksList
         tasks={tasks}
         completedTasks={completedTasks}

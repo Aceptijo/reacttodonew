@@ -11,7 +11,7 @@ const TasksCount = ({ tasks, completedTasks }) => {
         Completed Tasks:
         {
           <div className="App__count">
-            {completedTasks.length} of {tasks.length}
+            {completedTasks.length} of {tasks.length + completedTasks.length}
           </div>
         }
       </span>
