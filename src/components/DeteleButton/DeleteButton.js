@@ -1,8 +1,12 @@
 import React from "react";
 
-const DeleteButton = () => {
+const DeleteButton = ({ checked, removeCheck, remove, task, id }) => {
   return (
-    <button className="App__deleteButton">
+    <button
+      className="App__deleteButton"
+      id={id}
+      onClick={() => (id === "task" ? remove(task) : removeCheck(checked))}
+    >
       <svg
         className="App__deleteButton-svg"
         fill="#526d28"

@@ -1,0 +1,30 @@
+@import '../../variables'
+
+.App__checkedTask
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  text-decoration: line-through
+  width: 100%
+  padding: 7px 0px
+  border: none
+  border-radius: 5px
+  color: $shadowColor
+  background: $bgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.5s
+
+
+
+.App__deleteButton
+  display: flex
+  background: transparent
+  border: none
+.App__deleteButton-svg
+  cursor: pointer
+  transition: .5s
+  &:hover
+    fill: #f50303
+    transition: .5s

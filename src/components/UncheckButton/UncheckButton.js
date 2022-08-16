@@ -1,11 +1,11 @@
 import React from "react";
 
-const UncheckButton = () => {
+const UncheckButton = ({ check, task }) => {
   return (
-    <button className="App__uncheckButton">
+    <button className="App__uncheckButton" onClick={() => check(task)}>
       <svg
-        width="25px"
-        height="25px"
+        width="21px"
+        height="21px"
         viewBox="0 0 16 16"
         fill="#526d28"
         className="App__uncheckButton-svg"

@@ -1,13 +1,13 @@
 import React from "react";
 
-const CheckButton = () => {
+const CheckButton = ({ reverseCheck, checked }) => {
   return (
-    <button className="App__checkButton">
+    <button className="App__checkButton" onClick={() => reverseCheck(checked)}>
       <svg
         className="App__checkButton-svg"
         fill="#526d28"
-        width="24"
-        height="24"
+        width="21"
+        height="21"
         viewBox="0 0 330 330"
       >
         <path
