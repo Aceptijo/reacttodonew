@@ -1,6 +1,5 @@
 import React from "react";
 import "./MyButton.sass";
-import "./MyButton-media.sass";
 
 const MyButton = ({ children, create, title }) => {
   const add = () => {

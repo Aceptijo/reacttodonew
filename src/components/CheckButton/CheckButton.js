@@ -1,6 +1,5 @@
 import React from "react";
 import "./CheckButton.sass";
-import "./CheckButton-media.sass";
 
 const CheckButton = ({ reverseCheck, checked }) => {
   return (

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Task.sass";
+import "./Task-media.sass";
 import DeleteButton from "../DeteleButton/DeleteButton";
 import UncheckButton from "../UncheckButton/UncheckButton";
 import EditButton from "../EditButton/EditButton";
