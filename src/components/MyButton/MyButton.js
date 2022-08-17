@@ -2,20 +2,9 @@ import React from "react";
 import "./MyButton.sass";
 import "./MyButton-media.sass";
 
-const MyButton = ({ children, create, title }) => {
-  const add = () => {
-    if (title !== "") {
-      const newTask = {
-        title: title,
-        id: new Date().getTime(),
-        edited: false,
-      };
-      create(newTask);
-    }
-  };
-
+const MyButton = ({ children, add }) => {
   return (
-    <button className="App__myButton" onClick={add}>
+    <button className="App__myButton" onClick={() => add()}>
       {children}
     </button>
   );

@@ -38,7 +38,6 @@ function App() {
       <span className="App__title"> NEW TODO</span>
       <AddTask
         tasks={tasks}
-        setTasks={setTasks}
         title={title}
         setTitle={setTitle}
         create={create}

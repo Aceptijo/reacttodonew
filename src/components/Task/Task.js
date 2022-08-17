@@ -34,7 +34,7 @@ const Task = ({ task, remove, check }) => {
         onChange={(event) => setNewText(event.target.value)}
         autoFocus={true}
       />
-      <UpdateButton task={task} changeEdited={changeEdited} />
+      <UpdateButton task={task} changeEdited={changeEdited} newText={newText} />
     </div>
   );
 };

@@ -1,4 +1,6 @@
 @import '../../variables'
+
+
 .App__update
   display: flex
   width: 100%
@@ -25,3 +27,21 @@
     box-shadow: 0 0 20px 0 $shadowColor
   &:hover
     box-shadow: 0 0 20px 0 $shadowColor
+
+
+.App__updateButton-disabled
+  font-size: 18px
+  padding: 13px
+  border-radius: 0 5px 5px 0
+  color: $fontColor
+  border: none
+  background: #ba0000
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.1s
+  cursor: pointer
+  &:focus-visible
+    outline: none
+    box-shadow: 0 0 20px 0 #f50303
+  &:hover
+    box-shadow: 0 0 20px 0 #f50303
