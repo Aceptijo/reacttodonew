@@ -5,9 +5,9 @@ const MyButton = ({ children, create, title }) => {
   const add = () => {
     if (title !== "") {
       const newTask = {
-        id: Math.random(),
         title: title,
-        key: Math.random(),
+        id: new Date().getTime(),
+        edited: false,
       };
       create(newTask);
     }

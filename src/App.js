@@ -2,7 +2,6 @@ import "./App.sass";
 import { useState } from "react";
 import AddTask from "./components/AddTask/AddTask";
 import TasksList from "./components/TasksList/TasksList";
-import UpdateInput from "./components/UpdateInput/UpdateInput";
 
 function App() {
   const [tasks, setTasks] = useState([]);

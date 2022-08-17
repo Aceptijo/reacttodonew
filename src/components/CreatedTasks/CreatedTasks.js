@@ -7,8 +7,8 @@ const CreatedTasks = ({ tasks, remove, check }) => {
     <div className="App__createdTasks">
       {tasks.map((task) => (
         <Task
-          title={task.title}
-          key={task.key}
+          key={task.id}
+          edited={task.edited}
           task={task}
           remove={remove}
           check={check}

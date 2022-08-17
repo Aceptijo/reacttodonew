@@ -14,7 +14,7 @@ const CheckedTasks = ({
       {completedTasks.map((checked) => (
         <Checked
           title={checked.title}
-          key={checked.key}
+          key={checked.id}
           remove={remove}
           removeCheck={removeCheck}
           check={check}

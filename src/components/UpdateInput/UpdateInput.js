@@ -1,12 +1,11 @@
 import React from "react";
 import "./UpdateInput.sass";
 
-const UpdateInput = ({ value, task }) => {
+const UpdateInput = ({ task, changeEdited }) => {
   return (
-    <div className="App__update">
-      <input className="App__updateInput" defaultValue={value} type="text" />
-      <button className="App__updateButton">Update</button>
-    </div>
+    <button className="App__updateButton" onClick={() => changeEdited(task)}>
+      Update
+    </button>
   );
 };
 

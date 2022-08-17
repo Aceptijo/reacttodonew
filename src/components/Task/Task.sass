@@ -6,26 +6,53 @@
   align-items: center
   font-size: 14px
   width: 100%
-  padding: 7px 0px
+  padding: 7px 0
   border-radius: 5px
   color: $darkColor
   background: $lightBgColor
   font-weight: 400
   font-family: $mainFont
-  transition: 0.5s
+  transition: background .5s, color .5s, box-shadow .5s
   &:hover
-    box-shadow: 0px 0px 20px 0px $shadowColor
+    box-shadow: 0 0 20px 0 $shadowColor
     background: $bgColor
     color: $activeColor
-    transition: 0.5s
+    transition: background .5s, color .5s, box-shadow .5s
 
+.App__editedTask
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  width: 100%
+  border-radius: 5px
+  color: $darkColor
+  background: $lightBgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: background .5s, color .5s, box-shadow .5s
+
+.App__edited-title
+  width: 85%
+  font-size: 14px
+  padding: 10px
+  border-radius: 5px 0 0 5px
+  color: $darkColor
+  border: none
+  background: $bgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: 0.5s
+  &:focus-visible
+    outline: none
+    background: $bgColor
 
 
 .App__deleteButton
   display: flex
   background: transparent
   border: none
-  padding: 0px 7px 0px 0px
+  padding: 0 7px 0 0
 .App__deleteButton-svg
   cursor: pointer
   transition: .5s
@@ -44,7 +71,7 @@
   display: flex
   background: transparent
   border: none
-  padding: 0px 7px
+  padding: 0 7px
 .App__checkButton-svg
   cursor: pointer
   transition: .5s
@@ -57,7 +84,7 @@
   display: flex
   background: transparent
   border: none
-  padding: 0px 7px
+  padding: 0 7px
 .App__uncheckButton-svg
   cursor: pointer
   transition: .5s
@@ -70,7 +97,7 @@
   display: flex
   background: transparent
   border: none
-  padding: 0px 7px
+  padding: 0 7px
 .App__checkButton-svg
   cursor: pointer
   transition: .5s
