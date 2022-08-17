@@ -1,7 +1,7 @@
 import React from "react";
-import "./UpdateInput.sass";
+import "./UpdateButton.sass";
 
-const UpdateInput = ({ task, changeEdited }) => {
+const UpdateButton = ({ task, changeEdited }) => {
   return (
     <button className="App__updateButton" onClick={() => changeEdited(task)}>
       Update
@@ -9,4 +9,4 @@ const UpdateInput = ({ task, changeEdited }) => {
   );
 };
 
-export default UpdateInput;
+export default UpdateButton;

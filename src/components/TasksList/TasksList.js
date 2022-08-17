@@ -15,7 +15,9 @@ const TasksList = ({
   return (
     <div className="App__tasksList">
       <TasksCount tasks={tasks} completedTasks={completedTasks} />
-      <CreatedTasks tasks={tasks} remove={remove} check={check} />
+      {tasks.length > 0 ? (
+        <CreatedTasks tasks={tasks} remove={remove} check={check} />
+      ) : null}
       <CheckedTasks
         completedTasks={completedTasks}
         remove={remove}

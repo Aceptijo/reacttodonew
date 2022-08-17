@@ -4,8 +4,8 @@ const UncheckButton = ({ check, task }) => {
   return (
     <button className="App__uncheckButton" onClick={() => check(task)}>
       <svg
-        width="21px"
-        height="21px"
+        width="26px"
+        height="26px"
         viewBox="0 0 16 16"
         fill="#526d28"
         className="App__uncheckButton-svg"

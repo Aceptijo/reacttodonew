@@ -36,7 +36,6 @@ function App() {
   return (
     <div className="App">
       <span className="App__title"> NEW TODO</span>
-
       <AddTask
         tasks={tasks}
         setTasks={setTasks}

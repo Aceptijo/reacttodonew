@@ -12,7 +12,7 @@ const DeleteButton = ({ checked, removeCheck, remove, task, id }) => {
         fill="#526d28"
         width="24"
         height="24"
-        viewBox="0 0 491.415 491.415"
+        viewBox="0 0 491 491"
       >
         <path
           d="M491.015,80.959c-0.2-2.9-0.1-5.7-0.6-8.6c-0.7-5.7-2-11.3-3.9-16.8c-7.6-21.8-24.6-39.9-45.9-48.6

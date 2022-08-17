@@ -3,16 +3,18 @@ import "./Task.sass";
 import DeleteButton from "../DeteleButton/DeleteButton";
 import UncheckButton from "../UncheckButton/UncheckButton";
 import EditButton from "../EditButton/EditButton";
-import UpdateInput from "../UpdateInput/UpdateInput";
+import UpdateButton from "../UpdateButton/UpdateButton";
 
 const Task = ({ task, remove, check }) => {
   const [edit, setEdit] = useState(false);
   const [newText, setNewText] = useState(task.title);
 
   const changeEdited = (task) => {
-    setEdit(!edit);
-    task.edited = edit;
-    task.title = newText;
+    if (newText.length !== 0) {
+      setEdit(!edit);
+      task.edited = edit;
+      task.title = newText;
+    }
   };
 
   return edit === false ? (
@@ -31,7 +33,7 @@ const Task = ({ task, remove, check }) => {
         onChange={(event) => setNewText(event.target.value)}
         autoFocus={true}
       />
-      <UpdateInput task={task} changeEdited={changeEdited} />
+      <UpdateButton task={task} changeEdited={changeEdited} />
     </div>
   );
 };

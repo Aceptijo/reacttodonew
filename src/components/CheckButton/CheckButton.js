@@ -6,8 +6,8 @@ const CheckButton = ({ reverseCheck, checked }) => {
       <svg
         className="App__checkButton-svg"
         fill="#526d28"
-        width="21"
-        height="21"
+        width="26"
+        height="26"
         viewBox="0 0 330 330"
       >
         <path

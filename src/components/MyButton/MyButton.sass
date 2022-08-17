@@ -2,25 +2,24 @@
 
 .App__myButton
   width: 15%
-  font-size: 14px
-  padding: 10px
-  border-radius: 5px
-  color: $fontColor
+  font-size: 18px
+  padding: 13px
   border: none
-  background: $shadowColor
-  font-weight: 400
-  font-family: $mainFont
+  border-radius: 5px
   transition: 0.1s
   cursor: pointer
+  font-weight: 400
+  font-family: $mainFont
+  background: $shadowColor
+  color: $fontColor
   &:active
-    outline: none
-    //outline: 1px solid $shadowColor
-    box-shadow: 0px 0px 20px 0px $shadowColor
-    background: $activeColor
     color: $fontColor
+    background: $activeColor
+    outline: none
+    box-shadow: 0 0 20px 0 $shadowColor
   &:focus-visible
     outline: none
-    box-shadow: 0px 0px 20px 0px $shadowColor
+    box-shadow: 0 0 20px 0 $shadowColor
   &:hover
-    box-shadow: 0px 0px 20px 0px $shadowColor
+    box-shadow: 0 0 20px 0 $shadowColor
 
