@@ -1,7 +1,7 @@
 import React from "react";
 import "./MyInput.sass";
 
-const MyInput = ({ setTitle, title, empty }) => {
+const MyInput = ({ setTitle, title, empty, add }) => {
   return (
     <input
       className={
@@ -13,6 +13,11 @@ const MyInput = ({ setTitle, title, empty }) => {
       }
       value={title}
       onChange={(event) => setTitle(event.target.value)}
+      onKeyDown={(e) => {
+        if (e.code === "Enter" || e.code === "NumpadEnter") {
+          add();
+        }
+      }}
     />
   );
 };

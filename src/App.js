@@ -2,6 +2,7 @@ import "./App.sass";
 import { useState } from "react";
 import AddTask from "./components/AddTask/AddTask";
 import TasksList from "./components/TasksList/TasksList";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <span className="App__title"> NEW TODO</span>
+      <Navbar />
       <AddTask
         tasks={tasks}
         title={title}

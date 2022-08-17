@@ -17,7 +17,7 @@ const AddTask = ({ title, create, setTitle }) => {
 
   return (
     <div className="App__addTask">
-      <MyInput title={title} setTitle={setTitle} />
+      <MyInput title={title} setTitle={setTitle} add={add} />
       <MyButton title={title} create={create} add={add}>
         Create
       </MyButton>
