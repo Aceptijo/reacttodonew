@@ -1,4 +1,6 @@
 import React from "react";
+import "./DeleteButton.sass";
+import "./DeleteButton-media.sass";
 
 const DeleteButton = ({ checked, removeCheck, remove, task, id }) => {
   return (

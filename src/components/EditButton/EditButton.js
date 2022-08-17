@@ -1,4 +1,5 @@
 import React from "react";
+import "./EditButton.sass";
 
 const EditButton = ({ task, changeEdited }) => {
   return (
