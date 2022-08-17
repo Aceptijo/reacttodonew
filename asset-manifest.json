@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reacttodonew/static/css/main.3e32d63e.css",
+    "main.js": "/reacttodonew/static/js/main.3bab3f48.js",
+    "index.html": "/reacttodonew/index.html",
+    "main.3e32d63e.css.map": "/reacttodonew/static/css/main.3e32d63e.css.map",
+    "main.3bab3f48.js.map": "/reacttodonew/static/js/main.3bab3f48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e32d63e.css",
+    "static/js/main.3bab3f48.js"
+  ]
+}
