@@ -5,18 +5,18 @@ import TasksList from "./components/TasksList/TasksList";
 import Navbar from "./components/Navbar/Navbar";
 import "./variablesLight.sass";
 
-const getLocalTasks = () => {
-  const task = localStorage.getItem("createdTasks");
-  return task ? JSON.parse(task) : [];
-};
-
 const getLocalDoneTasks = () => {
   const completedTask = localStorage.getItem("completedTasks");
   return completedTask ? JSON.parse(completedTask) : [];
 };
 
+const getLocalTasks = () => {
+  const task = localStorage.getItem("createdTasks");
+  return task ? JSON.parse(task) : [];
+};
+
 function App() {
-  const [tasks, setTasks] = useState(getLocalTasks());
+  const [tasks, setTasks] = useState(() => getLocalTasks());
   const [completedTasks, setCompletedTasks] = useState(getLocalDoneTasks());
   const [title, setTitle] = useState("");
 
