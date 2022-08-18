@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.sass";
+import "./Navbar-media.sass";
 import ThemeButton from "../ThemeButton/ThemeButton";
 
 const Navbar = () => {

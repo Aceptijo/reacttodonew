@@ -12,6 +12,7 @@ const CreatedTasks = ({ tasks, remove, check }) => {
           task={task}
           remove={remove}
           check={check}
+          tasks={tasks}
         />
       ))}
     </div>

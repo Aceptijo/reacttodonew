@@ -6,7 +6,7 @@ import UncheckButton from "../UncheckButton/UncheckButton";
 import EditButton from "../EditButton/EditButton";
 import UpdateButton from "../UpdateButton/UpdateButton";
 
-const Task = ({ task, remove, check }) => {
+const Task = ({ task, remove, check, tasks }) => {
   const [edit, setEdit] = useState(false);
   const [newText, setNewText] = useState(task.title);
 
@@ -15,6 +15,7 @@ const Task = ({ task, remove, check }) => {
       setEdit(!edit);
       task.edited = edit;
       task.title = newText;
+      localStorage.setItem("createdTasks", JSON.stringify([...tasks]));
     }
   };
 
