@@ -1,17 +1,49 @@
 import "./App.sass";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddTask from "./components/AddTask/AddTask";
 import TasksList from "./components/TasksList/TasksList";
 import Navbar from "./components/Navbar/Navbar";
 
+const getLocalTasks = () => {
+  const task = localStorage.getItem("createdTasks");
+  return task ? JSON.parse(task) : [];
+};
+
+const getLocalDoneTasks = () => {
+  const completedTask = localStorage.getItem("completedTasks");
+  return completedTask ? JSON.parse(completedTask) : [];
+};
+
 function App() {
-  const [tasks, setTasks] = useState([]);
-  const [completedTasks, setCompletedTasks] = useState([]);
+  const [tasks, setTasks] = useState(getLocalTasks());
+  const [completedTasks, setCompletedTasks] = useState(getLocalDoneTasks());
   const [title, setTitle] = useState("");
+
+  useEffect(
+    () => localStorage.setItem("createdTasks", JSON.stringify(tasks)),
+    [tasks]
+  );
+
+  useEffect(
+    () =>
+      localStorage.setItem("completedTasks", JSON.stringify(completedTasks)),
+    [completedTasks]
+  );
 
   const create = (newTask) => {
     setTasks([...tasks, newTask]);
     setTitle("");
+  };
+
+  const add = () => {
+    if (title !== "") {
+      const newTask = {
+        title: title,
+        id: new Date().getTime(),
+        edited: false,
+      };
+      create(newTask);
+    }
   };
 
   const remove = (task) => {
@@ -37,12 +69,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <AddTask
-        tasks={tasks}
-        title={title}
-        setTitle={setTitle}
-        create={create}
-      />
+      <AddTask add={add} title={title} setTitle={setTitle} create={create} />
       <TasksList
         tasks={tasks}
         completedTasks={completedTasks}
