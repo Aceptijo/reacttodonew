@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
+![image](file:///C:/Users/grine/Downloads/Screenshot_2.png)
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
