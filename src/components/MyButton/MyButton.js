@@ -2,9 +2,15 @@ import React from "react";
 import "./MyButton.sass";
 import "./MyButton-media.sass";
 
-const MyButton = ({ children, add }) => {
+const MyButton = ({ children, add, showError }) => {
   return (
-    <button className="App__myButton" onClick={() => add()}>
+    <button
+      className="App__myButton"
+      onClick={() => {
+        showError();
+        add();
+      }}
+    >
       {children}
     </button>
   );

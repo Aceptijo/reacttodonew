@@ -21,6 +21,29 @@
     color: $phColor
 
 
+.App__myInput-txt_active
+  width: 85%
+  font-size: 18px
+  padding: 13px
+  border-radius: 5px
+  color: $fontColor
+  border: none
+  background: $lightBgColor
+  font-weight: 400
+  font-family: $mainFont
+  transition: background 0.4s ease, box-shadow 0.4s ease
+  &:focus-visible
+    outline: 1px solid $shadowColor
+    box-shadow: 0 0 20px 0 $shadowColor
+    background: $bgColor
+    &::placeholder
+      transition: 1s
+      color: $bgColor
+  &::placeholder
+    transition: 1s
+    color: #f50303
+
+
 
 
 
