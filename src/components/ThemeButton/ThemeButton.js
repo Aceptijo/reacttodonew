@@ -1,5 +1,6 @@
 import React from "react";
 import "./ThemeButton.sass";
+import "./ThemeButton-media.sass";
 
 const ThemeButton = () => {
   return (

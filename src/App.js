@@ -25,10 +25,6 @@ function App() {
     [tasks]
   );
 
-  const lol = () => {
-
-  }
-
   useEffect(
     () =>
       localStorage.setItem("completedTasks", JSON.stringify(completedTasks)),

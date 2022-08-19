@@ -1,5 +1,6 @@
 import React from "react";
 import "./TasksCount.sass";
+import "./TasksCount-media.sass";
 
 const TasksCount = ({ tasks, completedTasks }) => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import CreatedTasks from "../CreatedTasks/CreatedTasks";
 import "./TasksList.sass";
+import "./TasksList-media.sass";
 import TasksCount from "../TasksCount/TasksCount";
 import CheckedTasks from "../CheckedTasks/CheckedTasks";
 import EmptyListSign from "../EmptyListSign/EmptyListSign";
