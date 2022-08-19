@@ -1,0 +1,13 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 3f0e4720e59258ad7da60c44fbec26c36e4a233d)
++++ b/README.md	(date 1660854407063)
+@@ -1,0 +1,4 @@
++## Completed Tasks
++![image](https://i.ibb.co/yyXZpbq/Screenshot-7.png)
++![image](https://i.ibb.co/MPS75G2/Screenshot-8.png)
++##
