@@ -5,10 +5,8 @@ const MyInput = ({ setTitle, title, add, emptyTitle }) => {
   return (
     <input
       className={!emptyTitle ? "App__myInput-txt_active" : "App__myInput-txt"}
+      placeholder={!emptyTitle ? "Add new task" : "Add new task"}
       type="text"
-      placeholder={
-        !emptyTitle ? "Please, enter at least something" : "Add new task"
-      }
       value={title}
       onChange={(event) => setTitle(event.target.value)}
       onKeyDown={(e) => {

@@ -8,6 +8,7 @@ const AddTask = ({ title, create, setTitle, add }) => {
 
   const showError = () => {
     setEmptyTitle(title.length !== 0);
+    setTimeout(() => setEmptyTitle(emptyTitle), 600);
   };
 
   return (
