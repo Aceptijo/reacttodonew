@@ -1,9 +1,9 @@
 import React from "react";
 import "./EditButton.sass";
 
-const EditButton = ({ task, changeEdited }) => {
+const EditButton = ({ task, updateTask }) => {
   return (
-    <button className="App__editButton" onClick={() => changeEdited(task)}>
+    <button className="App__editButton" onClick={() => updateTask(task)}>
       <svg
         className="App__editButton-svg"
         fill="#526d28"

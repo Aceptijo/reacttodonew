@@ -17,7 +17,6 @@ const AddTask = ({ title, create, setTitle, add }) => {
         setTitle={setTitle}
         add={add}
         emptyTitle={emptyTitle}
-        showError={showError}
       />
       <MyButton title={title} create={create} add={add} showError={showError}>
         Create

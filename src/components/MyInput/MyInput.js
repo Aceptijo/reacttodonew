@@ -1,7 +1,7 @@
 import React from "react";
 import "./MyInput.sass";
 
-const MyInput = ({ setTitle, title, add, emptyTitle, showError }) => {
+const MyInput = ({ setTitle, title, add, emptyTitle }) => {
   return (
     <input
       className={!emptyTitle ? "App__myInput-txt_active" : "App__myInput-txt"}

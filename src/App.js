@@ -41,7 +41,6 @@ function App() {
       const newTask = {
         title: title,
         id: new Date().getTime(),
-        edited: false,
       };
       create(newTask);
     }
