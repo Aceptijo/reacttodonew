@@ -6,7 +6,6 @@ const EditButton = ({ task, updateTask }) => {
     <button className="App__editButton" onClick={() => updateTask(task)}>
       <svg
         className="App__editButton-svg"
-        fill="#526d28"
         width="24px"
         height="24px"
         viewBox="3 2 18 19"

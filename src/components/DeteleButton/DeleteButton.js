@@ -10,7 +10,6 @@ const DeleteButton = ({ checked, removeCheck, remove, task, id }) => {
     >
       <svg
         className="App__deleteButton-svg"
-        fill="#526d28"
         width="24"
         height="24"
         viewBox="0 0 491 491"

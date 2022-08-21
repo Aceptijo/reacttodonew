@@ -6,9 +6,18 @@
   display: flex
   background: transparent
   border: none
-.App__themeButton-svg
+.App__themeButton-svg-sun
   cursor: pointer
   transition: .5s
   &:hover
     fill: #fffb00
+    transition: .5s
+
+.App__themeButton-svg-moon
+  transform: rotateZ(270deg)
+  cursor: pointer
+  transition: .5s
+  fill: $activeColor
+  &:hover
+    fill: $phColor
     transition: .5s

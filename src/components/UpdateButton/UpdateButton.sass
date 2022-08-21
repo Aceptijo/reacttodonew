@@ -18,7 +18,6 @@
   transition: 0.1s
   cursor: pointer
   &:active
-    outline: 1px solid $activeColor
     box-shadow: 0 0 20px 0 $shadowColor
     background: $activeColor
     color: $fontColor
@@ -35,13 +34,13 @@
   border-radius: 0 5px 5px 0
   color: $fontColor
   border: none
-  background: #ba0000
+  background: $phColor
   font-weight: 400
   font-family: $mainFont
   transition: 0.1s
   cursor: pointer
   &:focus-visible
     outline: none
-    box-shadow: 0 0 20px 0 #f50303
+    box-shadow: 0 0 20px 0 $phColor
   &:hover
-    box-shadow: 0 0 20px 0 #f50303
+    box-shadow: 0 0 20px 0 $phColor

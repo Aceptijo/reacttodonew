@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AddTask from "./components/AddTask/AddTask";
 import TasksList from "./components/TasksList/TasksList";
 import Navbar from "./components/Navbar/Navbar";
-import "./variablesLight.sass";
+import "./variablesLight.scss";
 
 const getLocalDoneTasks = () => {
   const completedTask = localStorage.getItem("completedTasks");
