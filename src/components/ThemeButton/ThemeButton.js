@@ -1,25 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ThemeButton.sass";
 import "./ThemeButton-media.sass";
 
-const ThemeButton = () => {
-  const html = document.querySelector("html");
-
-  const [mode, setMode] = useState(true);
+const ThemeButton = ({ setMode, mode }) => {
+  const body = document.querySelector("body");
 
   const switchMode = () => {
     setMode(!mode);
+    localStorage.setItem(
+      "dark-mode",
+      body.classList.contains("dark") ? "true" : "false"
+    );
   };
 
   return (
     <button
       className="App__themeButton"
       onClick={() => {
-        html.classList.toggle("dark");
+        body.classList.toggle("dark");
         switchMode();
       }}
     >
-      {mode === true ? (
+      {!mode ? (
         <svg
           className="App__themeButton-svg-sun"
           width="34px"

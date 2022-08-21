@@ -15,10 +15,19 @@ const getLocalTasks = () => {
   return task ? JSON.parse(task) : [];
 };
 
+const getLocalMode = () => {
+  if (localStorage.getItem("dark-mode") === "true") {
+    document.body.classList.add("dark");
+    return true;
+  }
+};
+
 function App() {
   const [tasks, setTasks] = useState(() => getLocalTasks());
   const [completedTasks, setCompletedTasks] = useState(getLocalDoneTasks());
   const [title, setTitle] = useState("");
+  const [mode, setMode] = useState(getLocalMode());
+  console.log(getLocalMode());
 
   useEffect(
     () => localStorage.setItem("createdTasks", JSON.stringify(tasks)),
@@ -30,6 +39,13 @@ function App() {
       localStorage.setItem("completedTasks", JSON.stringify(completedTasks)),
     [completedTasks]
   );
+
+  useEffect(() => {
+    localStorage.setItem(
+      "dark-mode",
+      document.body.classList.contains("dark") ? "true" : "false"
+    );
+  });
 
   const create = (newTask) => {
     setTasks([...tasks, newTask]);
@@ -68,7 +84,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar mode={mode} setMode={setMode} />
       <AddTask add={add} title={title} setTitle={setTitle} create={create} />
       <TasksList
         tasks={tasks}
