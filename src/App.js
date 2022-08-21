@@ -27,7 +27,6 @@ function App() {
   const [completedTasks, setCompletedTasks] = useState(getLocalDoneTasks());
   const [title, setTitle] = useState("");
   const [mode, setMode] = useState(getLocalMode());
-  console.log(getLocalMode());
 
   useEffect(
     () => localStorage.setItem("createdTasks", JSON.stringify(tasks)),
