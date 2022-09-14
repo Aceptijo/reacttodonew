@@ -1,11 +1,19 @@
+@import '../../variablesLight'
+
+
 @media (max-width: 767px)
   .App__myInput-txt
+    padding: 13px
     font-size: 18px
     position: fixed
     bottom: 0
     left: 0
     width: 64vw
     border-radius: 0
+    &:focus-visible
+      outline-offset: -1px
+      box-shadow: 0 0 20px 0 $shadowColor
+      background: $bgColor
 
   .App__myInput-txt_active
     position: fixed
